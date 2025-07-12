@@ -24,7 +24,7 @@ if option == "Open or Create File in Notepad":
     filename = st.text_input("Enter file name to open/create in Notepad:")
     if st.button("Open Notepad"):
         if filename:
-            subprocess.Popen(["notepad", filename])
+            subprocess.Popen(["notepad.exe", filepath])
         else:
             st.warning("Please enter a file name.")
 
